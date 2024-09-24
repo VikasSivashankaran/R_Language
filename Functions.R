@@ -35,3 +35,17 @@ my_function <- function(x) {
 print(my_function(3))
 print(my_function(5))
 print(my_function(9))
+
+
+#recursion
+
+tri_recursion <- function(k) {
+  if (k > 0) {
+    result <- k + tri_recursion(k - 1)
+    print(result)
+  } else {
+    result = 0
+    return(result)
+  }
+}
+tri_recursion(6)
